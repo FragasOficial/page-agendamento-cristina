@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body{
+    background-color: rgb(230, 163, 163);
+}
+
+.config-all{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: black;
+    width: 100vw;
+}
+
+header{
+    width: 600px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.config-header02{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+#config-h1{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    font-weight: bolder;
+    color: white;
+    font-size: 36px;
+    height: 100px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.config-div01{
+    width: 600px;
+    margin: auto;
+}
+
+.config-caption{
+    padding: 10px 18px;
+    font-weight: bolder;
+    font-variant: normal;
+   
+}
+
+#config-week{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.config-day{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.day-date{
+    text-align: center;
+    border: 1.5px solid black;
+    border-color: rgb(97, 68, 50);
+    height: 35px;
+    width: 50px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.config-table{
+    margin: auto;
+
+}
+
+.config-caption{
+
+}
+.config-footer{
+    border: 1px solid black;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    justify-content: center;
+    margin: 50px auto auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 90px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
