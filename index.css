@@ -1,111 +1,248 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-body{
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgb(230, 163, 163);
-    width: 70%;
-    margin: 3rem auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.config-all{
+.config-all {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal; 
     color: black;
 }
 
-img{
+img {
     width: 100px;
     height: 100px;
 }
 
-.config-header02{
+.config-header02 {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 10px;
     font-weight: bold;
-    
 }
 
-#config-h1{
+#config-h1 {
     margin: auto;
     align-items: center;
     text-align: center;
     background-color: black;
     font-weight: bolder;
     color: white;
-    font-size: 36px;
+    font-size: 2.25rem; /* Ajustado para melhor visualização em diferentes dispositivos */
     height: 100px;
     font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    justify-content: center;
-    display: flex;
-    border: 1px solid white;
-    border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
-.config-caption{
+.config-caption {
     padding: 10px 18px;
     font-weight: bolder;
     font-variant: normal;
-   
 }
 
-#config-week{
+#config-week {
     font-weight: bold;
     text-align: center;
     padding-top: 20px;
 }
 
-.config-day{
+#hora-cons, #hora-cons-sabado, #hora-cons-domingo,
+#hora-cons-feriado{
+    width: 5.5vw;
+    text-align: center;
+}
+
+.config-day {
     text-align: center;
     border: 1px solid black;
 }
 
-.day-date{
+.day-date {
     text-align: center;
     border: 1.5px solid black;
     border-color: rgb(97, 68, 50);
     height: 35px;
-    width: 50px;
+    width: 2rem;
     padding-top: 20px;
-    font-size: 18px;
+    font-size: 1.125rem; /* Ajustado para melhor visualização em diferentes dispositivos */
 }
 
-.config-title-paragraph{
+.config-title-paragraph {
     text-align: center;
-    font-size: large;
+    font-size: 1.25rem; /* Ajustado para melhor visualização em diferentes dispositivos */
     padding-top: 2rem;
 }
 
-.box-agendamento{
+.box-agendamento {
     display: flex;
-    
+    flex-direction: column; /* Mudado para coluna em dispositivos menores */
+    align-items: center; /* Alinhamento centralizado */
 }
 
-.dimension-card-horario{
+.dimension-card-horario {
     display: flex;
-    width: 20rem;
+    flex-direction: column; /* Mudado para coluna em dispositivos menores */
+    width: 100%;
+    max-width: 600px; /* Largura máxima para evitar grandes dimensões em dispositivos maiores */
+    margin: 1rem; /* Espaçamento entre os elementos */
+}
+
+.botton-enviar{
+    justify-content: end;
+}
+
+button{
+    cursor: pointer;
+    font-weight: bold;
+    border: 0.015rem solid gray;
+    border-radius: 30rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgba(75, 74, 74, 0.397);
+    color: black;
+    text-transform: uppercase;
 }
 
-.config-footer{
+.config-footer {
+    width: 100%;
     border: 1px solid black;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     justify-content: center;
-    margin: 50px auto auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 90px;
+    height: 6rem;
     background-color: black;
     color: white;
-    font-size: 13px;
+    font-size: 0.8125rem; /* Ajustado para melhor visualização em diferentes dispositivos */
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) { /* Tablets */
+    body {
+        width: 95%;
+    }
+
+    #config-h1 {
+        font-size: 2rem;
+    }
+
+    .config-header02 {
+        font-size: 1.5rem;
+    }
+
+    .day-date {
+        font-size: 1rem;
+    }
+
+    .config-title-paragraph {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 768px) { /* Dispositivos móveis */
+    body {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #config-h1 {
+        font-size: 1.5rem;
+        height: auto; /* Altura ajustada para se ajustar ao conteúdo */
+    }
+
+    .config-header02 {
+        font-size: 1.25rem;
+    }
+
+    .day-date {
+        font-size: 0.875rem;
+    }
+
+    .config-title-paragraph {
+        font-size: 1rem;
+    }
+
+    .box-agendamento {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) { /* Celulares menores */
+    body {
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #config-h1 {
+        font-size: 1.25rem;
+    }
+
+    .config-header02 {
+        font-size: 1.125rem;
+    }
+
+    .day-date {
+        font-size: 0.75rem;
+    }
+
+    .config-title-paragraph {
+        font-size: 0.875rem;
+    }
+
+    .box-agendamento {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) { /* Smart TVs e grandes telas */
+    body {
+        width: 80%;
+    }
+
+    #config-h1 {
+        font-size: 2.5rem;
+    }
+
+    .config-header02 {
+        font-size: 2rem;
+    }
+
+    .day-date {
+        font-size: 1.25rem;
+    }
+
+    .config-title-paragraph {
+        font-size: 1.5rem;
+    }
 }
