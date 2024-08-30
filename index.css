@@ -4,14 +4,17 @@
 body {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
-    background-color: pink;
+    background-color: black;
+    color: pink;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
 }
 
 header{
+    background-color: pink;
     margin: o auto;
     width: 100%;
     max-width: 100%;
@@ -23,7 +26,12 @@ header{
 
 }
 
+.config-header02{
+    color: white;
+}
+
 .paragraphIntro{
+    color: pink;
     margin: 0 auto;
     padding: 1rem;
     text-align: justify;
@@ -31,6 +39,7 @@ header{
 }
 
 #agendamentoForm{
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,6 +47,7 @@ header{
 }
 
 .personal-info{
+    color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -45,7 +55,7 @@ header{
     flex-direction: column;
 }
 
-#festa{
+#festa, #hora-cons-sabado, #hora-cons-domingo, #hora-cons-feriado{
     align-items: center;
     width: 50%;
 }
@@ -55,7 +65,7 @@ label{
     text-align: left;
 }
 
-.escolherData{
+.escolherData, .escolherHour, .config-title-paragraph{
     font-size: large;
     font-weight: bold;
     margin-bottom: 0.3rem;
@@ -88,19 +98,26 @@ img {
 }
 
 #config-h1 {
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
     text-align: center;
     background-color: black;
     font-weight: bolder;
     color: white;
     font-size: 2.25rem; /* Ajustado para melhor visualização em diferentes dispositivos */
-    height: 100px;
+    height: 15vw;
     font-family: "Great Vibes", cursive;
     display: flex;
-    justify-content: space-evenly;
-    border: 1px solid white;
-    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.flor{
+    width: 10rem;
+    height: 10rem;
+}
+
+.titleOne{
+    font-size: 4.5rem;
 }
 
 .config-caption {
@@ -117,7 +134,12 @@ img {
 
 #hora-cons, #hora-cons-sabado, #hora-cons-domingo,
 #hora-cons-feriado{
-    width: 5.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -134,6 +156,10 @@ img {
     width: 2rem;
     padding-top: 20px;
     font-size: 1.125rem; /* Ajustado para melhor visualização em diferentes dispositivos */
+}
+
+.dimension-card-horario hidden{
+    justify-content: center;
 }
 
 .config-title-paragraph {
@@ -157,7 +183,15 @@ img {
 }
 
 .botton-enviar{
-    justify-content: end;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3rem;
+}
+
+#submitBtn{
+    width: 80%;
+    background-color: pink;
+    color: black;
 }
 
 button{
@@ -179,11 +213,21 @@ button{
     text-transform: uppercase;
 }
 
+button:hover{
+
+}
+
+#result{
+    padding: 2rem;
+    background-color: pink;
+    color: black;
+}
+
 .config-footer {
     width: 100%;
     border: 1px solid black;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    /* border-top-left-radius: 2px;
+    border-top-right-radius: 2px; */
     justify-content: center;
     text-align: center;
     display: flex;
