@@ -1,3 +1,23 @@
+
+    window.onload = function() {
+        const dialog = document.getElementById('welcomeDialog');
+        dialog.showModal();
+
+        const scheduleButton = document.getElementById('scheduleButton');
+        scheduleButton.onclick = function() {
+            dialog.close();
+            // Adicione aqui a ação para direcionar ao agendamento
+            window.location.href = '/agendamento'; // Exemplo de redirecionamento para a página de agendamento
+        };
+
+        const servicesLink = document.getElementById('servicesLink');
+        servicesLink.onclick = function() {
+            dialog.close();
+            // Adicione aqui a ação para direcionar à seção de serviços
+            window.location.href = '#services'; // Exemplo de redirecionamento para a seção de serviços
+        };
+    };
+
 document.getElementById('festa').addEventListener('change', function() {
     var selectedDate = new Date(this.value);
     var dayOfWeek = selectedDate.getDay();
