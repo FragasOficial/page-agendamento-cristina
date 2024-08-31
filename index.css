@@ -31,11 +31,75 @@ header{
 }
 
 .paragraphIntro{
-    color: pink;
+    color: white;
     margin: 0 auto;
     padding: 1rem;
     text-align: justify;
     text-indent: 5rem;
+}
+
+.nossosServicos{
+    gap: 0.1rem;
+    width: 98%;
+    max-width: 100%;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 0.01rem solid gray;
+    justify-content: center;
+    border-radius: 0.2rem;
+}
+
+.typeProduct{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center-;
+    width: 33%;
+    max-width: 100%;
+    border: 0.01rem solid gray;
+    justify-content: center;
+    border-radius: 0.2rem;
+}
+
+.title-services{
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.servicesUnhas{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 1rem;
+}
+
+.titlePlus{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.servicesCaracteristic{
+    text-align: left;
+}
+
+.descriptionProduct{
+    font-size: large;
+    padding-left: 0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.btn-services{
+    width: 66%;
+    max-width: 100%;
+    color: pink;
+    background-color: black;
+    margin-top: 1.5rem;
 }
 
 #agendamentoForm{
@@ -55,9 +119,19 @@ header{
     flex-direction: column;
 }
 
-#festa, #hora-cons-sabado, #hora-cons-domingo, #hora-cons-feriado{
+#festa, #hora-cons, #hora-cons-sabado, #hora-cons-domingo, #hora-cons-feriado{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    width: 30%;
+    max-width: 100%;
+    height: 2.3vw;
+    max-height: 100%;
+    font-size: large;
+    text-align: center;
+    color: black;
+    background-color: white;
 }
 
 label{
@@ -71,11 +145,15 @@ label{
     margin-bottom: 0.3rem;
 }
 
-.config-date{
+.config-date, .configWeek, .configSaturday, .configMonday, .configBreak{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    margin-top: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .config-all {
@@ -134,17 +212,6 @@ img {
     padding-top: 20px;
 }
 
-#hora-cons, #hora-cons-sabado, #hora-cons-domingo,
-#hora-cons-feriado{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    max-width: 100%;
-    text-align: center;
-}
-
 .config-day {
     text-align: center;
     border: 1px solid black;
@@ -176,8 +243,9 @@ img {
     display: flex;
     flex-direction: column; /* Mudado para coluna em dispositivos menores */
     width: 100%;
-    max-width: 600px; /* Largura máxima para evitar grandes dimensões em dispositivos maiores */
-    margin: 1rem; /* Espaçamento entre os elementos */
+    max-width: 100%; /* Largura máxima para evitar grandes dimensões em dispositivos maiores */
+    /* 88886+  */
+    /* Espaçamento entre os elementos */
 }
 
 .botton-enviar{
@@ -217,14 +285,13 @@ button{
     color: white;
 }
 
-.config-footer {
+footer{
     width: 100%;
     border: 1px solid black;
-    /* border-top-left-radius: 2px;
-    border-top-right-radius: 2px; */
     justify-content: center;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     height: 6rem;
     background-color: black;
